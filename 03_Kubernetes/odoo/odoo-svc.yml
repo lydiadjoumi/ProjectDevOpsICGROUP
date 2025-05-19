@@ -1,0 +1,17 @@
+piVersion: v1
+kind:  Service
+metadata:
+  name: odoo-svc
+  namespace: icgroup
+  labels:
+    env: prod
+    app: odoo
+    type: local
+spec:
+   selector:
+      app: odoo
+   ports: 
+   - port: 8069
+     targetPört: 8069
+     nodeport: 30010
+     type: NodePort

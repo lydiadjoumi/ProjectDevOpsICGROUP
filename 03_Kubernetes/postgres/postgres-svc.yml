@@ -1,0 +1,16 @@
+piVersion: v1
+kind:  Service
+metadata:
+  name: postgres-svc
+  namespace: icgroup
+  labels:
+    env: prod
+    app: postgres
+    type: local
+spec:
+   selector:
+      app: postgres
+   ports: 
+   - port: 5432
+     targetPort: 5432
+     type: ClusterIP

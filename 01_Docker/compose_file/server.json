@@ -1,0 +1,14 @@
+{
+
+    "Server":{
+        "1":{
+          "Name": "DevOps Project by Lydia",
+          "Group": "database group",
+          "Username": "odoo",
+          "Host": "odoo_database",
+          "Password": "myodoo",
+          "SSLMode": "prefer",
+          "MaintenanceDB":"postgres"
+        }
+    }
+}

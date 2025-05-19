@@ -1,0 +1,17 @@
+piVersion: v1
+kind:  Service
+metadata:
+  name: pgadmin-svc
+  namespace: icgroup
+  labels:
+    env: prod
+    app: pgadmin
+    type: local
+spec:
+   selector:
+      app: pgadmin
+   ports: 
+   - port: 80
+     targetPört: 80
+     nodeport: 30011
+   type: NodePort

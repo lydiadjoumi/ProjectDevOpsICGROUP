@@ -1,0 +1,25 @@
+piVersion: v1
+kind:  ConfigMap
+metadata:
+  name: pgadmin-cm
+  namespace: icgroup
+  labels: 
+     env: prod
+     app: pgadmin
+data:
+
+  server.json: | {
+    "Server":{
+        "1":{
+          "Name": "DevOps Project by Lydia",
+          "Group": "database group",
+          "Username": "odoo",
+          "Host": "postgres_svc",
+          "Password": "myodoo",
+          "SSLMode": "prefer",
+          "MaintenanceDB":"postgres"
+        }
+    }
+    }
+  email: admin@example.com
+
